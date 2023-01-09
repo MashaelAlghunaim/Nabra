@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		621765B3296BFA3C00069C47 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 621765B5296BFA3C00069C47 /* Localizable.strings */; };
 		62EF6C58296AF25F000277E7 /* NewSoundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EF6C57296AF25F000277E7 /* NewSoundApp.swift */; };
 		62EF6C5A296AF25F000277E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EF6C59296AF25F000277E7 /* ContentView.swift */; };
 		62EF6C5C296AF25F000277E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62EF6C5B296AF25F000277E7 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		621765B4296BFA3C00069C47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62EF6C54296AF25F000277E7 /* NewSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EF6C57296AF25F000277E7 /* NewSoundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSoundApp.swift; sourceTree = "<group>"; };
 		62EF6C59296AF25F000277E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		62EF6C4B296AF25F000277E7 = {
 			isa = PBXGroup;
 			children = (
+				621765B5296BFA3C00069C47 /* Localizable.strings */,
 				62EF6C56296AF25F000277E7 /* NewSound */,
 				62EF6C55296AF25F000277E7 /* Products */,
 			);
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62EF6C5F296AF25F000277E7 /* Preview Assets.xcassets in Resources */,
+				621765B3296BFA3C00069C47 /* Localizable.strings in Resources */,
 				62EF6C5C296AF25F000277E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +160,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		621765B5296BFA3C00069C47 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				621765B4296BFA3C00069C47 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		62EF6C60296AF25F000277E7 /* Debug */ = {

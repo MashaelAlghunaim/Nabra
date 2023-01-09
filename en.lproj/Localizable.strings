@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  NewSound
+
+  Created by Mashael Alghunaim on 16/06/1444 AH.
+  
+*/
+"اختر اللغة المراد عرضها:" = "Choose  language to display:";
+"العربية" = "Arabic";
+"الإنجليزية" = "English";
+"كُلي آذانٌ صاغية" = "All ears";

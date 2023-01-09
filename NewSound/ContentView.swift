@@ -28,7 +28,7 @@ struct ContentView: View {
                 Text("اختر اللغة المراد عرضها:").foregroundColor(Color.white)
                     .font(.system(size: 20))
                     .padding(.bottom, 700.0)
-                    .padding(.leading,160.0)
+                    .padding(.trailing,160.0)
                 
                 
             }
@@ -42,9 +42,7 @@ struct ContentView: View {
             }).padding(.bottom, 600.0).pickerStyle(.segmented)
                 .padding(.horizontal)
             
-           // Divider()
-            
-            
+
             VStack {
                 if pickedTheme == "2"{
                     Text(self.closedCap.captioning).foregroundColor(Color.white)
@@ -54,7 +52,8 @@ struct ContentView: View {
                     Text(self.arabicClosedCap.captioning).foregroundColor(Color.white)
                             .font(.system(size: 30))
                         .padding(.top, 280)}
-                }
+            
+
                 if pickedTheme == "2"{
                     Button( action: {
                         self.closedCap.micButtonTapped() })
@@ -71,15 +70,13 @@ struct ContentView: View {
                                 .shadow(color: Color("mediumblue"), radius: 6, x: 2, y: 2)
                                 .scaleEffect(animateSkyColor ? 1 : 1.5)
                                 .animation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true).speed(3), value: animateAquaColor)
-                            
+
                             Image (systemName: "ear")
                                 .font(.system(size: 100))
                                 .foregroundColor(.white)
                                 .frame(width: 200, height: 200)
-                            Image("ww")
-                                .padding(.trailing, 115.0)
-                                .padding(.top, 40.0)
-                            
+
+
                         }
                     }
                     
@@ -105,12 +102,11 @@ struct ContentView: View {
                                 .font(.system(size: 100))
                                 .foregroundColor(.white)
                                 .frame(width: 200, height: 200)
-                            Image("ww")
-                                .padding(.trailing, 115.0)
-                                .padding(.top, 40.0)
+                        }
                         }
                     }
-                }
+            }
+            .padding(.top, 200.0)
             }
         }
     }
