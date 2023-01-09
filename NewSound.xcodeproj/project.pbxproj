@@ -13,6 +13,7 @@
 		62EF6C5F296AF25F000277E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62EF6C5E296AF25F000277E7 /* Preview Assets.xcassets */; };
 		62EF6C66296AF3F5000277E7 /* ClosedCaptioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EF6C65296AF3F5000277E7 /* ClosedCaptioning.swift */; };
 		62EF6C68296AFF1F000277E7 /* ArabicClosedCaptioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EF6C67296AFF1F000277E7 /* ArabicClosedCaptioning.swift */; };
+		7339FEAE296B0FBF003F432C /* logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7339FEAD296B0FBF003F432C /* logo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		62EF6C5E296AF25F000277E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		62EF6C65296AF3F5000277E7 /* ClosedCaptioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedCaptioning.swift; sourceTree = "<group>"; };
 		62EF6C67296AFF1F000277E7 /* ArabicClosedCaptioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArabicClosedCaptioning.swift; sourceTree = "<group>"; };
+		7339FEAD296B0FBF003F432C /* logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		62EF6C56296AF25F000277E7 /* NewSound */ = {
 			isa = PBXGroup;
 			children = (
+				7339FEAD296B0FBF003F432C /* logo.swift */,
 				62EF6C57296AF25F000277E7 /* NewSoundApp.swift */,
 				62EF6C67296AFF1F000277E7 /* ArabicClosedCaptioning.swift */,
 				62EF6C65296AF3F5000277E7 /* ClosedCaptioning.swift */,
@@ -115,6 +118,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 62EF6C4B296AF25F000277E7;
 			productRefGroup = 62EF6C55296AF25F000277E7 /* Products */;
@@ -145,6 +149,7 @@
 			files = (
 				62EF6C5A296AF25F000277E7 /* ContentView.swift in Sources */,
 				62EF6C58296AF25F000277E7 /* NewSoundApp.swift in Sources */,
+				7339FEAE296B0FBF003F432C /* logo.swift in Sources */,
 				62EF6C66296AF3F5000277E7 /* ClosedCaptioning.swift in Sources */,
 				62EF6C68296AFF1F000277E7 /* ArabicClosedCaptioning.swift in Sources */,
 			);

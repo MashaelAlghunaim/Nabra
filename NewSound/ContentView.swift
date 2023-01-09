@@ -9,6 +9,12 @@ import SwiftUI
 import Speech
 struct ContentView: View {
     @State var pickedTheme = "1"
+    init(){
+        UISegmentedControl.appearance().backgroundColor = .lightText
+        UISegmentedControl.appearance().selectedSegmentTintColor = .lightText
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(Color.black)], for: .selected)
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(Color.black)], for: .normal)
+    }
     @State private var animateAquaColor = false
     @State private var animateSkyColor = false
     @ObservedObject var closedCap = ClosedCaptioning()
@@ -62,6 +68,7 @@ struct ContentView: View {
                             Circle()
                                 .frame(width: 120, height: 120, alignment: .bottomLeading)
                                 .foregroundColor(Color("mediumblue"))
+                                .shadow(color: Color("mediumblue"), radius: 6, x: 2, y: 2)
                                 .scaleEffect(animateSkyColor ? 1 : 1.5)
                                 .animation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true).speed(3), value: animateAquaColor)
                             
@@ -69,6 +76,10 @@ struct ContentView: View {
                                 .font(.system(size: 100))
                                 .foregroundColor(.white)
                                 .frame(width: 200, height: 200)
+                            Image("ww")
+                                .padding(.trailing, 115.0)
+                                .padding(.top, 40.0)
+                            
                         }
                     }
                     
@@ -86,6 +97,7 @@ struct ContentView: View {
                             Circle()
                                 .frame(width: 120, height: 120, alignment: .bottomLeading)
                                 .foregroundColor(Color("mediumblue"))
+                                .shadow(color: Color("mediumblue"), radius: 6, x: 2, y: 2)
                                 .scaleEffect(animateSkyColor ? 1 : 1.5)
                                 .animation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true).speed(3), value: animateAquaColor)
                             
@@ -93,6 +105,9 @@ struct ContentView: View {
                                 .font(.system(size: 100))
                                 .foregroundColor(.white)
                                 .frame(width: 200, height: 200)
+                            Image("ww")
+                                .padding(.trailing, 115.0)
+                                .padding(.top, 40.0)
                         }
                     }
                 }
