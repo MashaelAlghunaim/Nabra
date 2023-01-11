@@ -32,13 +32,21 @@ struct ContentView: View {
                 .ignoresSafeArea()
             VStack{
                 Text("اختر اللغة المراد عرضها:").foregroundColor(Color.white)
-                    .font(.system(size: 20))
+                    .font(.title3)
+                    .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+                    .accessibilityShowsLargeContentViewer()
                     .frame(maxWidth: .infinity, alignment: .leading).padding()
                     
                 Picker(" ", selection: $pickedTheme, content: {
                     Text("العربية").tag("1")
                         .foregroundColor(.gray)
+                        .font(.title3)
+                        .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+                        .accessibilityShowsLargeContentViewer()
                     Text("الإنجليزية").tag("2")
+                        .font(.title3)
+                        .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+                        .accessibilityShowsLargeContentViewer()
                     
                 })
                 .pickerStyle(.segmented)
@@ -49,7 +57,11 @@ struct ContentView: View {
                                     ScrollView {
 
                                         Text(self.closedCap.captioning).foregroundColor(Color.white)
-                                            .font(.system(size: 30))
+                                            .font(.largeTitle)
+                                            .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+                                            .accessibilityShowsLargeContentViewer()
+                                            .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+                                            .accessibilityShowsLargeContentViewer()
                                             .padding()
                                             .id(50)
                                     }
@@ -65,7 +77,9 @@ struct ContentView: View {
                                     ScrollView {
                                         
                                         Text(self.arabicClosedCap.captioning).foregroundColor(Color.white)
-                                            .font(.system(size: 30)).padding()
+                                            .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+                                            .accessibilityShowsLargeContentViewer()
+                                            .font(.largeTitle).padding()
                                             .id(50)
                                             .onChange(of: self.arabicClosedCap.captioning) { newValue in
                                                 value.scrollTo(50, anchor: .bottom)
