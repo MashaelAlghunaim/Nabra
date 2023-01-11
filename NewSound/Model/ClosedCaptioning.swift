@@ -1,5 +1,5 @@
 //
-//  ArabicClosedCaptioning.swift
+//  ClosedCaptioning.swift
 //  NewSound
 //
 //  Created by Mashael Alghunaim on 15/06/1444 AH.
@@ -10,14 +10,13 @@ import Speech
 import AVFoundation
 
 
-class ArabicClosedCaptioning: ObservableObject{
+class ClosedCaptioning: ObservableObject{
     
-    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ar-SA"))!
+    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
-    @Published var captioning: String =  "كُلي آذانٌ صاغية"
-        
+    @Published var captioning: String =  "All ears"
     @Published var isPlaying: Bool = false
     func startRecording() throws {
             
@@ -50,10 +49,10 @@ class ArabicClosedCaptioning: ObservableObject{
                     // ***We will update State here!***
                     // ??? = result.bestTranscription.formattedString
                     isFinal = result.isFinal
-                   // print("Text \(result.bestTranscription.formattedString)")
                     
                     // Update the text view with the results.
                     self.captioning = result.bestTranscription.formattedString
+
                 }
                 
                 if error != nil || isFinal {
@@ -81,12 +80,14 @@ class ArabicClosedCaptioning: ObservableObject{
         audioEngine.stop()
         recognitionRequest?.endAudio()
         isPlaying = false
+
       } else {
         do {
           try startRecording()
           isPlaying = true
         } catch {
         isPlaying = false
+
         }
     }}
     

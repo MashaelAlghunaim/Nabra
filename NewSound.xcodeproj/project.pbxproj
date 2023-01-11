@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		621765B4296BFA3C00069C47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		621765B7296BFF4200069C47 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62EF6C54296AF25F000277E7 /* NewSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EF6C57296AF25F000277E7 /* NewSoundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSoundApp.swift; sourceTree = "<group>"; };
 		62EF6C59296AF25F000277E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		621765BC296EAA7F00069C47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62EF6C65296AF3F5000277E7 /* ClosedCaptioning.swift */,
+				62EF6C67296AFF1F000277E7 /* ArabicClosedCaptioning.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		621765BD296EAAA700069C47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62EF6C59296AF25F000277E7 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		62EF6C4B296AF25F000277E7 = {
 			isa = PBXGroup;
 			children = (
@@ -61,10 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				7339FEAD296B0FBF003F432C /* logo.swift */,
+				621765BC296EAA7F00069C47 /* Model */,
+				621765BD296EAAA700069C47 /* View */,
 				62EF6C57296AF25F000277E7 /* NewSoundApp.swift */,
-				62EF6C67296AFF1F000277E7 /* ArabicClosedCaptioning.swift */,
-				62EF6C65296AF3F5000277E7 /* ClosedCaptioning.swift */,
-				62EF6C59296AF25F000277E7 /* ContentView.swift */,
 				62EF6C5B296AF25F000277E7 /* Assets.xcassets */,
 				62EF6C5D296AF25F000277E7 /* Preview Content */,
 			);
@@ -166,6 +183,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				621765B4296BFA3C00069C47 /* en */,
+				621765B7296BFF4200069C47 /* ar */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -305,7 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,7 +355,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
